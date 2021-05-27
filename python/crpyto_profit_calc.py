@@ -6,7 +6,7 @@ recieved_coin = 0.0
 held_coin_value = 0.0
 user_coin_value = 0.0
 gain = 0.0
-loss = 0.0
+loss = 0.1
 
 print(
     """
