@@ -32,7 +32,7 @@ amount_invested = float(input("How much NZD did you invest in said coin?: "))
 
 recieved_coin = amount_invested / coin_value
 
-print("You will recieved", recieved_coin, coin_name)
+print("You will recieve: ", recieved_coin, coin_name)
 print("Reminder! Fees are not included in this calculation, therefore the amount that ends up in your wallet may slightly vary from this result.")
 
 coin_value_nzd = coin_value * recieved_coin
