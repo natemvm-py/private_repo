@@ -27,7 +27,7 @@ for i in range(50000):
     thread.start()
     if(thread.is_alive):
         print("STILL GOING BABY!!!!")
-    elif OSError:
+    elif OSError or Exception in thread:
         thread.start()
     else:
         thread.start()
