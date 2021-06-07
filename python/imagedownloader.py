@@ -16,9 +16,9 @@ def imagedown(url, folder):
     for image in images:
         name = image['alt']
         link = image['src']
-        with open(name.replace(' ', '-').replace('/', '') + '.jpg', 'wb') as f:
+        with open(name.replace(' ', '-').replace('/', '').replace(',','') + '.jpg', 'wb') as f:
             im = requests.get(link)
             f.write(im.content)
             print('Writing: ', name)
 
-imagedown('URL', 'FOLDER_NAME')
+imagedown('', 'test')
