@@ -79,4 +79,4 @@ a += 1 #Plus Equals 1 = Adds 1 to the already existing value of that variable in
 a -= 1 #Minus Equals 1 = Subtracts 1 from the already existing value of that variable.
 a *= 1 #Mulitply Equals 1 = Multiplies 1 by the already existing value of that variable.
 a /= 1 #Divide Equals 1 = Divides 1 by the already existing value of that variable.
-a %= 1 #
+a %= 1 #Modulus Equals 1 = Gives the remainder of 1 comapared to the already existing value of that variable.
