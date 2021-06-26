@@ -12,7 +12,9 @@ import random
 list1 = []
 list2 = []
 
-for i in range(10):
+listLength = int(input('List Length: '))
+
+for i in range(listLength):
     list1.append(random.randint(1,100))
     list2.append(random.randint(1,100))
 print(list1)
