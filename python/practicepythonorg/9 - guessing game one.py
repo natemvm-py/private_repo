@@ -6,4 +6,18 @@
 
 import random
 
-num = random.randint(1,9)
+while(True):
+    userGuess = -999999
+    num = random.randint(1,9)
+    print(num)
+
+    if(userGuess != num):
+        userGuess = int(input('Enter Guess: '))
+
+        if userGuess == num:
+            print('You Got It!')
+            continue
+        elif userGuess > num :
+            print('Too High!')
+        elif userGuess < num:
+            print('Too Low!')
