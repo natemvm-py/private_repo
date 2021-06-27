@@ -67,23 +67,6 @@ while(True):
             print('Tie!')
             print('Player 1 Score:', playerScore1)
             print('Player 2 Score:', playerScore2)
-        #Player2 Paper
-        elif playerMove2 == 'paper' and playerMove1 == 'rock':
-            print('Player 2 Wins!')
-            playerScore2 += 1
-            print('Player 1 Score:', playerScore1)
-            print('Player 2 Score:', playerScore2)
-            count -= 1
-        elif playerMove2 == 'paper' and playerMove1 == 'paper':
-            print('Tie!')
-            print('Player 1 Score:', playerScore1)
-            print('Player 2 Score:', playerScore2)
-        elif playerMove2 == 'paper' and playerMove1 == 'scissors':
-            print('Player 1 Wins!')
-            playerScore1 += 1
-            print('Player 1 Score:', playerScore1)
-            print('Player 2 Score:', playerScore2)
-            count -= 1
         #Player2 Rock
         elif playerMove2 == 'rock' and playerMove1 == 'rock':
             print('Tie!')
@@ -98,6 +81,23 @@ while(True):
         elif playerMove2 == 'rock' and playerMove1 == 'scissors':
             print('Player 2 Wins!')
             playerScore2 += 1
+            print('Player 1 Score:', playerScore1)
+            print('Player 2 Score:', playerScore2)
+            count -= 1
+        #Player2 Paper
+        elif playerMove2 == 'paper' and playerMove1 == 'rock':
+            print('Player 2 Wins!')
+            playerScore2 += 1
+            print('Player 1 Score:', playerScore1)
+            print('Player 2 Score:', playerScore2)
+            count -= 1
+        elif playerMove2 == 'paper' and playerMove1 == 'paper':
+            print('Tie!')
+            print('Player 1 Score:', playerScore1)
+            print('Player 2 Score:', playerScore2)
+        elif playerMove2 == 'paper' and playerMove1 == 'scissors':
+            print('Player 1 Wins!')
+            playerScore1 += 1
             print('Player 1 Score:', playerScore1)
             print('Player 2 Score:', playerScore2)
             count -= 1
