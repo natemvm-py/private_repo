@@ -4,3 +4,6 @@
 #Keep the game going until the user types “exit”
 #Keep track of how many guesses the user has taken, and when the game ends, print this out.
 
+import random
+
+num = random.randint(1,9)
