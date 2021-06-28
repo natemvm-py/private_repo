@@ -15,11 +15,11 @@ for i in range(10):
 print(list)
 
 #Function that finds first and last element
-def first_last(list):
+def first_last():
 	newList.append(list[0]) #Appends first element to new list
 	newList.append(list[-1]) #Appends last element to new list.
 
-first_last(list) #Executing function
+first_last() #Executing function
 
 print(newList) #Printing results
 	
