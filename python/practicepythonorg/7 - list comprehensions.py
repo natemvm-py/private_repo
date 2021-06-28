@@ -12,9 +12,9 @@ for i in range(10):
     a.append(random.randint(1,100))
 
 print(a)
-time.sleep(0.5)
-print('Finding All Even Numbers')
-time.sleep(0.5)
+time.sleep(1)
+print('Finding All Even Numbers . . . ')
+time.sleep(1)
 b = []
 
 for element in a:
