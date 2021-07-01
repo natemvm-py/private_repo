@@ -11,17 +11,9 @@ randomNum = random.sample(sample, 4)
 
 def determine_cow_bull(randNum, cows, bulls):
 	while(cows != 4):
-		try:
-			userNum = list(input('Enter Guess: '))
-		except TypeError or SyntaxError or IndentationError or TypeError or IndexError:
-			userNum = list(input('Enter Guess: '))
-		
-		print('Random:', str(randNum))
-		print('User:  ', str(userNum))
-		
+		userNum = list(input('Enter Guess: '))
 		cows = 0
 		bulls = 0
-		
 		for i in range(len(randNum)):  
 			if randNum[i] == userNum[i]:
 				cows += 1
