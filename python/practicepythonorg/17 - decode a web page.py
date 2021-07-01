@@ -16,5 +16,3 @@ count = 1
 for i in articleNames:
 	print(count, i.text)
 	count += 1
-	
-#print(articleNames)

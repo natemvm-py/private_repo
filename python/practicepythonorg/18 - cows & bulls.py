@@ -16,13 +16,13 @@ def determine_cow_bull(randNum, cows, bulls):
 		except TypeError or SyntaxError or IndentationError or TypeError or IndexError:
 			userNum = list(input('Enter Guess: '))
 		
-		print('Random:', str(randNum), type(randNum))
-		print('User:  ', str(userNum), type(userNum))
+		print('Random:', str(randNum))
+		print('User:  ', str(userNum))
 		
 		cows = 0
 		bulls = 0
 		
-		for i in range(len(randNum)):
+		for i in range(len(randNum)):  
 			if randNum[i] == userNum[i]:
 				cows += 1
 			elif randNum[i] in userNum:
@@ -30,8 +30,7 @@ def determine_cow_bull(randNum, cows, bulls):
 		print('Cows:', cows)
 		print('Bulls:', bulls)
 
-#---------------------FUNCTION-END--------------------
-
 determine_cow_bull(randomNum, 0, 0)
 	
+print('You Got It!')
 print('Game Over')
