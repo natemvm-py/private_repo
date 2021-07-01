@@ -9,7 +9,7 @@ r_html = r.text
 
 soup = BeautifulSoup(r_html, features='html.parser')
 
-articleNames = soup.find_all('h3',  {'class':'css-xxaj7r e1lsht870'})
+articleNames = soup.find_all('h3', {'class':'css-xxaj7r e1lsht870'})
 
 count = 1
 
