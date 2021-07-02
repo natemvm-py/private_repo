@@ -15,4 +15,4 @@ def find_element(userGuess):
         return False
 
 while(True):
-    print(find_element(int(input('Enter Guess: '))))
+    print(find_element(int(input('Search: '))))
