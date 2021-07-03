@@ -29,6 +29,4 @@ for i in coin_table:
         list.append(i)
         
 
-print(list.text)
-
-#print(coin_table)
+print(coin_table)
