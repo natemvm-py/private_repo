@@ -2,7 +2,7 @@ import random
 
 list = []
 
-for i in range(10):
+for i in range(100):
     list.append(random.randint(1,99))
 
 list.sort()
