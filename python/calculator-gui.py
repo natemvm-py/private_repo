@@ -13,21 +13,19 @@ main_window.configure(background = '#17202A')
 main_window.resizable(False, False)
 
 equation = StringVar()
-expression_field = Entry(main_window, textvariable = equation)
+#expression_field = Entry(main_window, textvariable = equation)
 
 #Functions
-def button_press(num):
-    global expression
-    expression = expression + str(num)
-    equation.set(expression)
+#def button_press(num):
+    
 
 
 #Labels
 #Label(main_window, background = '#17202A', height = 10, width = 45).grid(row = 0, columnspan = 4)
-expression_field(background = '#17202A', height = 10, width = 45).grid(row = 0, columnspan=4)
+#expression_field(background = '#17202A', height = 10, width = 45).grid(row = 0, columnspan=4)
 
 #Buttons - Numbers (0 - 9)
-Button(main_window, background = '#212F3D', foreground = 'white', text = '1', height = 5, width = 10).grid(row = 1, column = 0)
+Button(main_window, command = button_press(1), background = '#212F3D', foreground = 'white', text = '1', height = 5, width = 10).grid(row = 1, column = 0)
 Button(main_window, background = '#212F3D', foreground = 'white', text = '2', height = 5, width = 10).grid(row = 1, column = 1)
 Button(main_window, background = '#212F3D', foreground = 'white', text = '3', height = 5, width = 10).grid(row = 1, column = 2)
 Button(main_window, background = '#212F3D', foreground = 'white', text = '4', height = 5, width = 10).grid(row = 2, column = 0)

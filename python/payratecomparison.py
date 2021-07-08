@@ -16,9 +16,9 @@ print(type(ksaver_percent))
 hours = float(input("Enter amount of hours: "))
 print(type(hours))
 
-fuckyou = int(input("How many times do you want the script to compare rates?"))
+count = int(input("How many times do you want the script to compare rates?"))
 
-for i in range(fuckyou):
+for i in range(count):
     hourly_rate = float(input("Enter hourly rate: "))
     print(type(hourly_rate))
 
