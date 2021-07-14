@@ -1,3 +1,46 @@
-h1 {
-  color: blue;
+/* base rules */
+*{
+  margin: 0;
+  padding: 0
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c757d;
+}
+
+body{
+  back: #000;
+}
+
+/* Navigation */
+
+nav.r-nav{
+  background: transparent;
+  padding: 20px 0;
+  transition: .5 all;
+}
+
+nav .navbar-brand{
+  font-size: 30px;
+  color: #fff;
+  transition: .5
+}
+
+nav .navbar-nav li a{
+  color: rgba(255,255,255,0.8) !important;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: 'Nunito',sans-serif;
+}
+
+nav .navbar-nav li{
+  margin-left: 15px;
 }
