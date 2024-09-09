@@ -9,15 +9,15 @@ import random
 sample = '1234567890'
 randomNum = random.sample(sample, 4)
 
-def determine_cow_bull(randNum, cows, bulls):
-	while(cows != 4):
-		userNum = list(input('Enter Guess: '))
+def determine_cow_bull(rand_num, cows, bulls):
+	while cows != 4:
+		user_num = list(input('Enter Guess: '))
 		cows = 0
 		bulls = 0
-		for i in range(len(randNum)):  
-			if randNum[i] == userNum[i]:
+		for i in range(len(rand_num)):
+			if rand_num[i] == user_num[i]:
 				cows += 1
-			elif randNum[i] in userNum:
+			elif rand_num[i] in user_num:
 				bulls += 1
 		print('Cows:', cows)
 		print('Bulls:', bulls)

